@@ -12,7 +12,7 @@ var typed = new Typed('#typed', {
 });
 
 $('.slider').slick({
-	speed: 1000,
+	speed: 800,
 	arrows: false,
 	dots: false,
 	autoplay: true,

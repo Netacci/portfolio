@@ -13,6 +13,7 @@
 
 #preloader {
 	background: #f1f2f3;
+	background: #392222;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -22,15 +23,53 @@
 }
 
 .status {
-	background: url(../images/preloader.gif);
-	background-repeat: no-repeat;
-	width: 100%;
-	height: 100%;
 	position: absolute;
+
 	left: 50%;
 	top: 50%;
-	margin-left: -117px;
-	margin-top: -117px;
+	transform: translate(-50%);
+	/* margin-left: -117px;
+	margin-top: -117px; */
+}
+#loader path:nth-child(1) {
+	stroke-dasharray: 604.4829711914062;
+	stroke-dashoffset: 604.4829711914062;
+	animation: line-anime 3s ease forwards;
+}
+#loader path:nth-child(2) {
+	stroke-dasharray: 463.9679870605469;
+	stroke-dashoffset: 463.9679870605469;
+	animation: line-anime 3s ease forwards 0.3s;
+}
+#loader path:nth-child(3) {
+	stroke-dasharray: 336.6719970703125;
+	stroke-dashoffset: 336.6719970703125;
+	animation: line-anime 3s ease forwards 0.6s;
+}
+#loader path:nth-child(4) {
+	stroke-dasharray: 490.2921142578125;
+	/* stroke-dashoffset: 4490.2921142578125;
+	animation: line-anime 3s ease forwards 0.9s; */
+}
+#loader path:nth-child(5) {
+	stroke-dasharray: 508.5520935058594;
+	stroke-dashoffset: 508.5520935058594;
+	animation: line-anime 3s ease forwards 1.2s;
+}
+#loader path:nth-child(6) {
+	stroke-dasharray: 508.5523681640625;
+	stroke-dashoffset: 508.55236816406258;
+	animation: line-anime 3s ease forwards 1.5s;
+}
+#loader path:nth-child(7) {
+	stroke-dasharray: 226.94400024414062;
+	stroke-dashoffset: 226.94400024414062;
+	animation: line-anime 3s ease forwards 1.8s;
+}
+@keyframes line-anime {
+	to {
+		stroke-dashoffset: 0;
+	}
 }
 
 body {

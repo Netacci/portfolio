@@ -1,7 +1,11 @@
+const loader = document.querySelectorAll('#loader path');
+for (let i = 0; i < loader.length; i++) {
+	console.log(`Letter ${i} is ${loader[i].getTotalLength()}`);
+}
 //preloader
 $(window).on('load', function () {
-	$('.status').fadeOut();
-	$('#preloader').delay(500).fadeOut();
+	$('.status').fadeOut(6000);
+	$('#preloader').delay(3000).fadeOut();
 });
 
 var typed = new Typed('#typed', {

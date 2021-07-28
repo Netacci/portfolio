@@ -27,8 +27,12 @@
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%);
+	font-size: 1rem;
 	/* margin-left: -117px;
 	margin-top: -117px; */
+}
+#loader {
+	width: 100%;
 }
 #loader path:nth-child(1) {
 	stroke-dasharray: 604.4829711914062;
@@ -241,6 +245,9 @@ hr {
 }
 
 @media all and (min-width: 992px) {
+	#loader {
+		width: unset;
+	}
 	.mobile {
 		display: none;
 	}

@@ -37,38 +37,38 @@
 }
 
 #loader path:nth-child(1) {
-	stroke-dasharray: 604.4829711914062;
-	stroke-dashoffset: 604.4829711914062;
+	stroke-dasharray: 611.8634033203125;
+	stroke-dashoffset: 611.8634033203125;
 	animation: line-anime 2s ease forwards 0.3s, fill-white 2s ease 2s forwards;
 }
 #loader path:nth-child(2) {
-	stroke-dasharray: 463.9679870605469;
-	stroke-dashoffset: 463.9679870605469;
+	stroke-dasharray: 544.0450439453125;
+	stroke-dashoffset: 544.0450439453125;
 	animation: line-anime 2s ease forwards 0.4s, fill-white 2s ease 2s forwards;
 }
 #loader path:nth-child(3) {
-	stroke-dasharray: 336.6719970703125;
-	stroke-dashoffset: 336.6719970703125;
+	stroke-dasharray: 439.681640625;
+	stroke-dashoffset: 439.681640625;
 	animation: line-anime 2s ease forwards 0.6s, fill-white 2s ease 2s forwards;
 }
 #loader path:nth-child(4) {
-	stroke-dasharray: 490.2921142578125;
-	stroke-dashoffset: 490.2921142578125;
+	stroke-dasharray: 519.6200561523438;
+	stroke-dashoffset: 519.6200561523438;
 	animation: line-anime 2s ease forwards 0.8s, fill-white 2s ease 2s forwards;
 }
 #loader path:nth-child(5) {
-	stroke-dasharray: 508.5520935058594;
-	stroke-dashoffset: 508.5520935058594;
+	stroke-dasharray: 417.81146240234375;
+	stroke-dashoffset: 417.81146240234375;
 	animation: line-anime 2s ease forwards 1s, fill-white 2s ease 2s forwards;
 }
 #loader path:nth-child(6) {
-	stroke-dasharray: 508.5523681640625;
-	stroke-dashoffset: 508.55236816406258;
+	stroke-dasharray: 417.8115234375;
+	stroke-dashoffset: 417.8115234375;
 	animation: line-anime 2s ease forwards 1.2s, fill-white 2s ease 2s forwards;
 }
 #loader path:nth-child(7) {
-	stroke-dasharray: 226.94400024414062;
-	stroke-dashoffset: 226.94400024414062;
+	stroke-dasharray: 273;
+	stroke-dashoffset: 273;
 	animation: line-anime 2s ease forwards 1.4s, fill-white 2s ease 2s forwards;
 }
 @keyframes line-anime {
@@ -88,6 +88,8 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 	position: relative;
+	background: #062660;
+	background: rgba(10, 25, 47, 0.85);
 }
 
 a {
@@ -98,12 +100,12 @@ a:hover {
 }
 
 /* header */
-
+/* 
 .bg-full {
 	background: rgb(255, 195, 168);
 	background: rgb(241, 251, 255);
 	background: #062660;
-}
+} */
 .text {
 	color: #333;
 	color: #f3f3f3;
@@ -113,17 +115,28 @@ a:hover {
 	font-size: calc(1.075rem + 1.1vw);
 	text-align: center;
 }
+.profi {
+	width: 70%;
+	text-align: center;
+}
+.profi img {
+	filter: drop-shadow(5px 5px 5px rgb(195, 195, 204));
+}
 .port {
 	padding: 1px;
-	background: #062660;
 }
 .bg-ful {
-	background: rgb(92, 72, 63);
+	/* background: rgb(92, 72, 63);
 	background: rgb(9, 69, 104);
-	background: #0a3a90;
+	background: #0a3a90; */
+	background: #062660;
+	background: #f3f3f3;
+	padding: 1px;
 }
 .text2 {
 	color: #fff;
+	color: #062660;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 /* .text3 {
@@ -146,7 +159,7 @@ a:hover {
 }
 .card {
 	/* background: rgba(255, 255, 255, 0.1); */
-	background: #0a3a90;
+	/* background: #0a3a90; */
 	border: 0.868982px solid #ffffff;
 	border: 0.868982px solid #d43300;
 	/* border: 0.868982px solid #604006; */
@@ -156,8 +169,8 @@ a:hover {
 }
 li {
 	list-style: none;
-	border: 2px solid #d43300;
-	border: 2px solid #604006;
+	/* border: 2px solid #d43300;
+	border: 2px solid #604006; */
 	color: #f3f3f3;
 	padding: 5px;
 	margin-top: 0.5rem;
@@ -209,6 +222,7 @@ h1 {
 	-webkit-text-fill-color: transparent;
 	-moz-text-fill-color: transparent;
 	font-weight: bold;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 .text-title {
 	/* -webkit-text-fill-color: #ffffff;
@@ -216,7 +230,9 @@ h1 {
 
 	text-shadow: 0px 4px 4px rgba(212, 191, 70, 0.25);
 }
-
+.bannertext {
+	color: #fff;
+}
 #Ellipse9_6 {
 	animation: zoom 3s linear infinite;
 	transform-origin: 49% 94%;
@@ -241,7 +257,7 @@ h1 {
 
 .social-icon {
 	font-size: 1.5rem;
-	color: rgb(9, 69, 104);
+	color: rgb(228, 234, 238);
 }
 hr {
 	width: 100%;
@@ -251,7 +267,10 @@ hr {
 	flex-wrap: wrap;
 }
 .foot-copy {
-	color: #2f80ed;
+	color: #ccd8e7;
+}
+.logo {
+	width: 35%;
 }
 
 @media all and (min-width: 992px) {
@@ -263,6 +282,13 @@ hr {
 	}
 	.web {
 		display: flex;
+	}
+	.logo {
+		width: 37%;
+	}
+	.profi {
+		text-align: center;
+		width: 25%;
 	}
 
 	.button {

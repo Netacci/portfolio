@@ -21,7 +21,7 @@
 	z-index: 9999;
 }
 
-#loader {
+.status {
 	position: absolute;
 
 	left: 50%;
@@ -31,6 +31,8 @@
 	/* margin-left: -117px;
 	margin-top: -117px; */
 	animation: fill-white 1s ease forwards 3s;
+}
+#loader {
 	width: 100%;
 }
 

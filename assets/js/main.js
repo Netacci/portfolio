@@ -5,7 +5,7 @@ for (let i = 0; i < loader.length; i++) {
 //preloader
 $(window).on('load', function () {
 	$('#loader').fadeOut(5000);
-	$('#preloader').delay(2500).slideUp(1000);
+	$('#preloader').delay(2000).slideUp(1000);
 });
 
 var typed = new Typed('#typed', {

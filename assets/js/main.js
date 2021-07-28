@@ -4,7 +4,7 @@ for (let i = 0; i < loader.length; i++) {
 }
 //preloader
 $(window).on('load', function () {
-	$('#loader').fadeOut(5000);
+	$('#loader').fadeOut(600);
 	$('#preloader').delay(2000).slideUp(1000);
 });
 

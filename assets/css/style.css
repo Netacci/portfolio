@@ -5,7 +5,7 @@
 	scroll-behavior: smooth;
 }
 :root {
-	--animate-duration: 15s;
+	--animate-duration: 2s;
 }
 
 /* PRELOADER */

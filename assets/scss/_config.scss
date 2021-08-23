@@ -1,0 +1,116 @@
+$bg-color: #edf2f4;
+$accent-color: #d90429;
+$light-pink: #fff0f2;
+$text: #2b2d42;
+$text-lighter: #8d99ae;
+$bg-middle: #fefefe;
+$text-red: #ef233c;
+$white: #ffffff;
+$font-stack: 'Acumin Pro Wide', Helvetica, sans-serif;
+
+@font-face {
+	font-family: 'Acumin Pro Wide';
+	src: url('./Font/Acumin Pro Wide Semibold.otf');
+	font-style: normal;
+	font-weight: 700;
+}
+@font-face {
+	font-family: 'Acumin Pro Wide';
+	src: url('./Font/Acumin Pro Wide Bold.otf');
+	font-style: normal;
+	font-weight: 900;
+}
+@font-face {
+	font-family: 'Acumin Pro Wide';
+	src: url('./Font/Acumin Pro Wide Medium.otf');
+	font-style: normal;
+	font-weight: 500;
+}
+@font-face {
+	font-family: 'Acumin Pro Wide';
+	src: url('./Font/Acumin Pro Wide Light.otf');
+	font-style: normal;
+	font-weight: 300;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+/* PRELOADER */
+
+#preloader {
+	background: $bg-color;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9999;
+}
+.status {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 1rem;
+	animation: fill-white 1s ease forwards 3s;
+}
+#loader {
+	width: 100%;
+}
+
+#loader path:nth-child(1) {
+	stroke-dasharray: 611.8634033203125;
+	stroke-dashoffset: 611.8634033203125;
+	animation: line-anime 2s ease forwards 0.3s, fill-white 2s ease 2s forwards;
+}
+#loader path:nth-child(2) {
+	stroke-dasharray: 544.0450439453125;
+	stroke-dashoffset: 544.0450439453125;
+	animation: line-anime 2s ease forwards 0.4s, fill-white 2s ease 2s forwards;
+}
+#loader path:nth-child(3) {
+	stroke-dasharray: 439.681640625;
+	stroke-dashoffset: 439.681640625;
+	animation: line-anime 2s ease forwards 0.6s, fill-white 2s ease 2s forwards;
+}
+#loader path:nth-child(4) {
+	stroke-dasharray: 519.6200561523438;
+	stroke-dashoffset: 519.6200561523438;
+	animation: line-anime 2s ease forwards 0.8s, fill-white 2s ease 2s forwards;
+}
+#loader path:nth-child(5) {
+	stroke-dasharray: 417.81146240234375;
+	stroke-dashoffset: 417.81146240234375;
+	animation: line-anime 2s ease forwards 1s, fill-white 2s ease 2s forwards;
+}
+#loader path:nth-child(6) {
+	stroke-dasharray: 417.8115234375;
+	stroke-dashoffset: 417.8115234375;
+	animation: line-anime 2s ease forwards 1.2s, fill-white 2s ease 2s forwards;
+}
+#loader path:nth-child(7) {
+	stroke-dasharray: 273;
+	stroke-dashoffset: 273;
+	animation: line-anime 2s ease forwards 1.4s, fill-white 2s ease 2s forwards;
+}
+@keyframes line-anime {
+	to {
+		stroke-dashoffset: 1;
+	}
+}
+@keyframes fill-white {
+	from {
+		fill: $accent-color;
+	}
+	to {
+		fill: $accent-color;
+	}
+}
+.w-50 {
+	width: 50%;
+}

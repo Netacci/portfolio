@@ -5,9 +5,11 @@ const hamClose = document.getElementById('hamburger-close');
 const mobile = document.querySelector('.mobile-nav');
 const links = document.querySelectorAll('.nav-li');
 // const intro = document.querySelector('#intro');
-// const skill = document.querySelector('#skill');
-// const work = document.querySelector('#work');
+const skill = document.querySelector('#skill');
+const work = document.querySelector('#work');
 // const blog = document.querySelector('#blog');
+const contact = document.querySelector('.contact');
+const footer = document.querySelector('.foot');
 
 // window.addEventListener('scroll', () => {
 // 	let wind = window.pageYOffset;
@@ -49,6 +51,18 @@ const onClickLink = () => {
 links.forEach((link) => {
 	link.addEventListener('click', onClickLink);
 });
+// removing navbar when you click anywhere else, couldn't figure out how to do it on the whole body without affecting the nav, only option would be to wrap the whole rest of the body asides header in a container but I don't want to touch my html
+const onClickBody = () => {
+	if (mobile.classList.contains('open')) {
+		hamClose.style.display = 'none';
+		ham.style.display = 'flex';
+		mobile.classList.toggle('open');
+	}
+};
+skill.addEventListener('click', onClickBody);
+work.addEventListener('click', onClickBody);
+contact.addEventListener('click', onClickBody);
+footer.addEventListener('click', onClickBody);
 
 // for (let i = 0; i < loader.length; i++) {
 // 	console.log(`Letter ${i} is ${loader[i].getTotalLength()}`);

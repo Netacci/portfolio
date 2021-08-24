@@ -15,6 +15,7 @@ body {
 		transition: all 0.2s ease;
 	}
 	nav {
+		transition: all 0.5s ease-in-out;
 		padding: 2rem 0;
 		position: fixed;
 		top: 0;
@@ -124,10 +125,18 @@ body {
 		.hero-image {
 			margin: 0 auto;
 			width: 70%;
+			position: relative;
 		}
-		// .buttons{
-		// 	margin-bottom: ;
-		// }
+		.circle-e {
+			position: absolute;
+			width: auto;
+			left: 10%;
+			top: 64%;
+			.ellipse-m {
+				max-width: 100%;
+				width: 47%;
+			}
+		}
 	}
 	.helper-div {
 		position: absolute;
@@ -137,12 +146,19 @@ body {
 		.img-helper {
 			width: 100%;
 		}
+		.ellipse-s {
+			top: 19px;
+			left: 46%;
+			position: absolute;
+			max-width: 100%;
+			width: 8%;
+		}
 	}
 }
+
 .navscroll {
 	background: $white;
 	max-height: 110px;
-	transition: all 0.2s ease;
 }
 // END OF HEADER
 
@@ -150,7 +166,7 @@ body {
 
 .skill-section {
 	background: $white;
-	margin-top: 1rem;
+	margin-top: 3rem;
 	padding: 1px;
 	.skill-mini-title {
 		color: $accent-color;
@@ -274,6 +290,7 @@ body {
 .contact {
 	background: $bg-color;
 	padding: 1px;
+
 	.skills-header {
 		margin-top: 5rem;
 		.cont-icon {
@@ -336,7 +353,7 @@ body {
 			background: $accent-color;
 			width: 125px;
 			height: 2px;
-			transform: matrix(1, 0.245, 0, 1, -135, 69);
+			transform: matrix(1, 0.245, 0, 1, -4, 20);
 		}
 	}
 }
@@ -359,6 +376,12 @@ body {
 			clip-path: circle(811px at 105% -10%);
 			-webkit-clip-path: circle(811px at 105% -10%);
 		}
+		.helper-div {
+			.ellipse-s {
+				left: 70%;
+				width: 6%;
+			}
+		}
 	}
 	.header-hero {
 		.hero-text {
@@ -369,6 +392,14 @@ body {
 		}
 		.hero-p {
 			font-size: 1rem;
+		}
+		.circle-e {
+			top: 23%;
+			left: 56%;
+
+			.ellipse-m {
+				width: 57%;
+			}
 		}
 	}
 	.skill-section {
@@ -438,6 +469,12 @@ body {
 			margin: initial;
 			width: 25%;
 		}
+		.helper-div {
+			.ellipse-s {
+				left: 75%;
+				width: 3%;
+			}
+		}
 	}
 	.mobile {
 		display: none !important;
@@ -445,6 +482,10 @@ body {
 	.header-hero {
 		align-items: center;
 		justify-content: space-evenly;
+		.circle-e {
+			top: 34%;
+			left: 61%;
+		}
 	}
 	.skill-section {
 		margin-top: 5rem;
@@ -522,6 +563,9 @@ body {
 			}
 		}
 	}
+	.contact {
+		margin-top: 7rem;
+	}
 }
 @media (min-width: 1200px) {
 	// .header {
@@ -529,6 +573,9 @@ body {
 	// 		padding: 2rem 9rem;
 	// 	}
 	// }
+	.skill-section {
+		margin-top: 7rem;
+	}
 	.contact {
 		.form {
 			width: 50%;
@@ -551,6 +598,19 @@ body {
 	// 		padding: 2rem 10rem;
 	// 	}
 	// }
+	.header {
+		.helper-div {
+			.ellipse-s {
+				left: 62%;
+				width: 2%;
+			}
+		}
+		.header-hero {
+			.circle-e {
+				left: 57%;
+			}
+		}
+	}
 	.skill-section {
 		margin-top: 16rem;
 	}

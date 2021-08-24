@@ -57,7 +57,7 @@ links.forEach((link) => {
 //preloader
 $(window).on('load', function () {
 	$('#loader').delay(500).fadeOut(5000);
-	$('#preloader').delay(500).slideUp(1000);
+	$('#preloader').delay(1000).slideUp(1000);
 });
 
 // Nav scroll

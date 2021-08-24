@@ -534,13 +534,18 @@ body {
 .skill-section .skills-title {
   color: #8d99ae;
   font-weight: 900;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .skill-section .skill-type-title {
   color: #8d99ae;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
+}
+
+.skill-section .skill-p {
+  font-size: 0.875rem;
+  color: #2b2d42;
 }
 
 .skills-watermark .skill-water-text {
@@ -720,6 +725,7 @@ body {
 
 .art {
   color: #2b2d42;
+  font-size: 1.3rem;
 }
 
 .med-link {
@@ -749,6 +755,7 @@ body {
 
 .foot .footer .foot-copy {
   color: #ffffff;
+  font-size: 0.87rem;
 }
 
 .foot .footer hr {

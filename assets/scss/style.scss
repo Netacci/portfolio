@@ -176,12 +176,16 @@ body {
 	.skills-title {
 		color: $text-lighter;
 		font-weight: 900;
-		font-size: 2rem;
+		font-size: 1.5rem;
 	}
 	.skill-type-title {
 		color: $text-lighter;
-		font-size: 1.5rem;
+		font-size: 1.2rem;
 		font-weight: 700;
+	}
+	.skill-p {
+		font-size: 0.875rem;
+		color: $text;
 	}
 }
 .skills-watermark {
@@ -317,6 +321,7 @@ body {
 }
 .art {
 	color: $text;
+	font-size: 1.3rem;
 }
 .med-link {
 	color: $accent-color;
@@ -338,6 +343,7 @@ body {
 		}
 		.foot-copy {
 			color: $white;
+			font-size: 0.87rem;
 		}
 		hr {
 			color: $white;

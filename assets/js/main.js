@@ -4,6 +4,24 @@ const ham = document.getElementById('hamburger');
 const hamClose = document.getElementById('hamburger-close');
 const mobile = document.querySelector('.mobile-nav');
 const links = document.querySelectorAll('.nav-li');
+// const intro = document.querySelector('#intro');
+// const skill = document.querySelector('#skill');
+// const work = document.querySelector('#work');
+// const blog = document.querySelector('#blog');
+
+// window.addEventListener('scroll', () => {
+// 	let wind = window.pageYOffset;
+
+// 	if (skill.offsetTop <= wind && work.offsetTop <= wind) {
+// 		console.log('Skill');
+// 	} else if (work.offsetTop <= wind && blog.offsetTop <= wind) {
+// 		console.log('work');
+// 	} else if (blog.offsetTop <= wind) {
+// 		console.log('blog');
+// 	} else {
+// 		console.log('intro');
+// 	}
+// });
 
 // Toggle hamburger nav open and close
 const onClickHam = () => {

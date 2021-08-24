@@ -6,7 +6,7 @@ $text-lighter: #8d99ae;
 $bg-middle: #fefefe;
 $text-red: #ef233c;
 $white: #ffffff;
-$font-stack: 'Acumin Pro Wide', Helvetica, sans-serif;
+$font-stack: 'Rubik', 'Acumin Pro Wide', Helvetica, sans-serif;
 
 @font-face {
 	font-family: 'Acumin Pro Wide';
@@ -43,7 +43,7 @@ $font-stack: 'Acumin Pro Wide', Helvetica, sans-serif;
 /* PRELOADER */
 
 #preloader {
-	background: $bg-color;
+	background: $white;
 	position: fixed;
 	top: 0;
 	left: 0;

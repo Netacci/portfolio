@@ -27,12 +27,9 @@
 		/>
 		<link rel="apple-touch-icon-precomposed" href="" />
 		<!-- Google fonts -->
-		<!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
-			rel="stylesheet"
-		/> -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 		<!-- CSS links-->
 		<link
 			rel="stylesheet"
@@ -52,7 +49,7 @@
 		/>
 		<link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
 	</head>
-	<body data-spy="scroll" data-target="#desktop-nav" data-offset="50" >
+	<body data-spy="scroll" data-target="#nav" data-offset="50" >
 		<!-- Preloader starts -->
 		<div id="preloader" class="preloader">
 			<div class="status">
@@ -113,6 +110,14 @@
 							<img src="./assets/images/NETACCI.svg" alt="logo">
 				
 						</a>
+						<div class="nav-links desktop-nav" id="desktop-nav">
+							<a href="#intro" class="nav-lin">Intro</a>
+							<a href="#skill" class="nav-lin">Skills</a>
+							<a href="#work" class="nav-lin">Works</a>
+							<a href="#blog" class="nav-lin">Blog</a>
+	
+							<a href="#contact" class="button-primary">Get in touch</a>
+						</div>
 						<div class="nav-links mobile-nav">
 							
 								<a href="#intro" class="nav-lin nav-li">Intro</a>
@@ -134,14 +139,7 @@
 							
 						</div>
 					
-					<div class="nav-links desktop-nav" id="desktop-nav">
-						<a href="#intro" class="nav-lin">Intro</a>
-						<a href="#skill" class="nav-lin">Skills</a>
-						<a href="#work" class="nav-lin">Works</a>
-						<a href="#blog" class="nav-lin">Blog</a>
-
-						<a href="#contact" class="button-primary">Get in touch</a>
-					</div>
+				
 				
 					</nav>
 					<div class="header-hero row">
@@ -163,11 +161,16 @@
 						</div>
 						<div class="hero-image mt-5 mt-md-0 col-12 col-md-5 col-lg-3">
 							<img src="./assets/images/profpic.png" alt="profile picture" class="img-fluid">
+							
+						</div>
+						<div class="circle-e">
+							<img src="./assets/images/Ellipse-s.png" alt="Ellipse" class="ellipse-m">
 						</div>
 					</div>
 				</div>
 				<div class="helper-div">
 					<img class="img-fluid img-helper" src="./assets/images/Rectangle.png">
+					<img src="./assets/images/Ellipse-m.png" alt="" class="ellipse-s">
 				</div>
 			</header>
 			
@@ -180,7 +183,10 @@
 
 					</div>
 					<div class="skills-box row justify-content-evenly mt-4">
-						<div class="fe col-12 col-md-5 d-flex ">
+						<div class="fe col-12 col-md-5 d-flex " data-aos="flip-right"
+						data-aos-easing="ease-out"
+						data-aos-duration="700"
+						data-aos-delay="300">
 							<div class="img-fe w-50">
 								<img src="/assets/images/fe-img.png" class="img-fluid">
 							</div>
@@ -195,7 +201,10 @@
 							</div>
 
 						</div>
-						<div class="it mt-4 mt-md-0 col-12 col-md-5 d-flex">
+						<div class="it mt-4 mt-md-0 col-12 col-md-5 d-flex" data-aos="flip-left"
+						data-aos-easing="ease-out"
+						data-aos-duration="700"
+						data-aos-delay="300">
 							<div class="it-img w-50">
 								<img src="/assets/images/it-img.png" class="img-fluid">
 							</div>
@@ -224,7 +233,10 @@
 						<div class="w-100 text-center">
 							<img src="./assets/images/illus.png" alt="illustration" class=" illus-img">
 						</div>
-						<div class="skills-img mt-5 text-center">
+						<div class="skills-img mt-5 text-center" data-aos="fade-up"
+						data-aos-easing="ease-out"
+						data-aos-duration="500"
+						data-aos-delay="300">
 							<div class="skil1">
 								<span class="iconify skill-icon" data-icon="bx:bxl-html5"></span>
 								<h4 class="icon-text">HTML</h4>
@@ -811,10 +823,13 @@
 						>
 					</div>
 						
-					<div class="bg-ful"  id="t">
+					<div class="bg-ful"  id="blog" data-aos="zoom-in"
+					data-aos-easing="ease-out"
+					data-aos-duration="500"
+					data-aos-delay="300">
 					
 
-						<h2 id="blog" class="art text-center mt-5 ">
+						<h2  class="art text-center mt-5 ">
 							Check out some articles I've written on
 							<a class="med-link" href="https://medium.com/@chinetaadinnu">
 								Medium</a
@@ -853,7 +868,7 @@
 							<input class="form-control mt-3" type="email" name="email" id="email" placeholder="Email">
 							<input class="form-control mt-3" type="text" name="subject" id="subject" placeholder="Subject">
 							<textarea class="form-control mt-3" name="message" id="message" cols="30" rows="10">Message</textarea>
-			<button type="submit" class="button-primary mx-auto  mt-3">Send message</button>
+			<button type="submit" class="button-primary mx-auto mb-4 mt-4">Send message</button>
 						
 					</form>
 				</div>
